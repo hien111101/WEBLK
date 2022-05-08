@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.0-web/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese">
+    </head>
+    <body>
+        <div class="app">
+            <header class="header">
+                <div class="grid">
+                    <nav class="header__navbar">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item header__navbar-item--has-qr">
+                                Chào mừng bạn đến với HLV-shop
+                                
+                                <!-- Header QR Code-->
+                                <div class="header__qr">
+                                    <img src="./assets/img/qr.code.png" alt="QR CODE" class="header__qr-img">
+                                    <div class="header__qr-apps">
+                                        <a href="" class="header__qr-link">
+                                            <img src="./assets/img/GGplay.png" alt="GOOGLE PLAY" class="header__qr-download-img">
+                                        </a>
+                                        <a href="" class="header__qr-link">
+                                            <img src="./assets/img/appstore.png" alt="APPLE STORE" class="header__qr-download-img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+    
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item header__navbar-item--has-notify">
+                                <a href="" class="header__navbar-item-link">
+                                    <i class="header__navbar-icon fa-solid fa-bell"></i>
+                                    Thông báo
+                                </a>
+                                <div class="header__notify">
+                                    <header class="header__notify-head">
+                                        <h3>Thông báo mới nhận</h3>
+                                    </header>
+                                    <ul class="header__notify-list">
+                                        <li class="header__notify-item header__notify-item--view">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://file.hstatic.net/1000026716/file/banner_fanpage_cover_177c054358e44aa28ba42238fef1ac94.jpg" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">
+                                                        TỔNG HỢP KHUYẾN MÃI CHUỘT GAMING
+                                                    </span>
+                                                    <span class="header__notify-descriotion">
+                                                            MÔ TẢ TỔNG HỢP KHUYẾN MÃI CHUỘT GAMING
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item header__notify-item--view">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://file.hstatic.net/1000026716/file/file_goc_tai_nghe_fanpage_cover_2954b760a9974fbe9ad0ca18ed90fb5b.jpg" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">
+                                                        TỔNG HỢP KHUYẾN MÃI TAI NGHE
+                                                    </span>
+                                                    <span class="header__notify-descriotion">
+                                                            MÔ TẢ TỔNG HỢP KHUYẾN MÃI TAI NGHE
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item header__notify-item--view">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://file.hstatic.net/1000026716/file/banner_fanpage_cover_4089dfa982b1479aad45e84d4e3b8248.png" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">
+                                                        TỔNG HỢP KHUYẾN MÃI BÀN PHÍM
+                                                    </span>
+                                                    <span class="header__notify-descriotion">
+                                                            MÔ TẢ TỔNG HỢP KHUYẾN MÃI BÀN PHÍM
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item header__notify-item--view">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://file.hstatic.net/1000026716/file/1_fanpage_60235733de354e57967c0f78936aa0c4.png" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">
+                                                        KHUYẾN MÃI GAMING GEAR LOGITECH
+                                                    </span>
+                                                    <span class="header__notify-descriotion">
+                                                            MÔ TẢ KHUYẾN MÃI GAMING GEAR LOGITECH
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                        <footer class="header__notify-footer">
+                                            <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                        </footer>
+                                </div>
+                                <a href="" class="header__navbar-item-link">
+                                    <i class="header__navbar-icon fa-solid fa-circle-question"></i>
+                                    Trợ giúp
+                                </a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link">Khuyến Mãi</a>
+                            </li>
+                            <button class="btn btn--dn header__navbar-item header__navbar-item--strong header__navbar-item--seperate js-auth-form-dn">Đăng nhập</button>
+                            <button class="btn btn--dk header__navbar-item header__navbar-item--strong js-auth-form-dk">Đăng kí</button>
+                            <!-- <li class="header__navbar-item header__navbar-user">
+                                <img src="https://cf.shopee.vn/file/3feb5e167370fcf13961ee8c00362a3c_tn" alt="" class="header__navbar-user-img">
+                                <span class="header__navbar-user-name">Huynh Hien</span>
+                                <ul class="header__navbar-user-menu">
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Tài Khoản Của Tôi</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Đơn Mua</a>
+                                    </li>
+                                    <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                        <a href="">Đăng Xuất</a>
+                                    </li>
+                                </ul>
+
+                            </li> -->
+                        </ul>
+                    </nav>
+                    <!-- Header-with-search -->
+                    <div class="header-with-search">
+                        <div class="header__logo">
+                            <a href="index.html" class="header__logo-link">
+                                <p>
+                                    <img src="https://thuvienlogo.com/data/03/logo-chu-z-dep-03.jpg" alt="" class="header__logo-img">
+                                </p>  
+                            </a>                       
+                        </div>
+
+                        <div class="header__search">
+                            <div class="header__search-input-wrap">
+                                <input type="text" class="header__search-input" placeholder="Tìm Kiếm Sản Phẩm">
+                                <!-- search history -->
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Lịch Sử Tìm Kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">Ram</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">VGA</a>
+                                        </li><li class="header__search-history-item">
+                                            <a href="">Core Intel 5</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__search-select">
+                                <span class="header__search-select-label">
+                                    Trong Shop
+                                </span>
+                                <i class="header__search-select-icon fa-solid fa-angle-down"></i>
+
+                                <ul class="header__search-option">
+                                    <li class="header__search-option-item header__search-option-item-active">
+                                        <span>Trong Shop</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="header__search-option-item">
+                                        <span>Ngoài Shop</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <!-- Giỏ Hàng -->
+                        <div class="header__cart">
+                            <div class="header__cart-wrap">
+                                <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                                <span class="header__cart-notice">0</span>
+                                <!-- co san pham trong gio hang -->
+                                <div class="header__cart-list">
+                                    <img src="./assets/img/no-cart.png" alt="" class="header__cart-nocart-img">
+                                    <span class="header__cart-list-nocart-mess">Chưa Có Sản Phẩm</span>
+                                    <!-- <h4 class="header__cart-heading">Sản Phẩm Đã Thêm</h4>
+                                    <ul class="header__cart-list-item">
+                                        <li class="header__cart-item">
+                                            <img src="https://product.hstatic.net/1000026716/product/gearvn.com-products-intel-core-i5-10400f-2_69ea122d78884db8985a0b5b2f23c206.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Intel Core i5 10400F</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">4,390,000₫</span>
+                                                        <SPAN class="header__cart-item-multiply">x</SPAN>
+                                                        <span class="header__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân Loại: CPU Intel
+                                                    </span>
+                                                    <span class="header__cart-item-delete">Xóa</span>
+        
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://product.hstatic.net/1000026716/product/01_3ed8356635034acc8ed66a54959d2dc2.png" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">MSI GeForce RTX 3060 GAMING...</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">14,490,000₫</span>
+                                                        <SPAN class="header__cart-item-multiply">x</SPAN>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân Loại: Card Màn Hình
+                                                    </span>
+                                                    <span class="header__cart-item-delete">Xóa</span>
+        
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://product.hstatic.net/1000026716/product/tuf-gaming-b460m-plus-1_1306ef92b1014fe8ad5c2fc8f2f787a2.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">ASUS TUF GAMING B460M-PLUS</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">2,690,000₫</span>
+                                                        <SPAN class="header__cart-item-multiply">x</SPAN>
+                                                        <span class="header__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân Loại: Main Board
+                                                    </span>
+                                                    <span class="header__cart-item-delete">Xóa</span>
+        
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="header__cart-view btn btn--primary">Xem Giỏ Hàng</a>
+                                </div> -->
+                                 <!-- No Cart : header__cart-list--no-cart (Khong co Gio Hang)-->
+                                <div class="header__cart-list header__cart-list--no-cart">
+                                    <img src="./assets/img/no-cart.png" alt="" class="header__cart-nocart-img">
+                                    <span class="header__cart-list-nocart-mess">Chưa Có Sản Phẩm</span>
+                                </div>
+                                <!-- Cart item (Gio Hàng) -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <img src="https://hoanghapc.vn/media/lib/24-04-2021/pc-gaming-3-min_optimized.jpg" width="100%" height="400px" class="picture" alt="">
+                <div class="grid__colum-10">
+                    <span class="home-filter__label">PC GAMING BÁN CHẠY</span>
+                </div>
+                <div class="home-product">
+                    </a>
+                    <div class="grid__row">
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://hoabinhcomputer.com/mediacenter/media/images/2209/products/2209/1/ventus296b4821fb354837a313ccd2036cc090-1634007150.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">GVN Ventus M</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">9,790,000₫</span>
+                                        <span class="h4 home-product-item__price-new">8,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://thaibinhgear.com//storage/admin/posts/September2020/kfM7u5llxcFfU4ECHXxT.webp);">
+                                    </div>
+                                    <h4 class="home-product-item__name">GVN Mystic M</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">13,480,000₫</span>
+                                        <span class="h4 home-product-item__price-new">12,690,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://hoabinhcomputer.com/mediacenter/media/images/2209/products/2209/2481/s1000_1000/ivy1a234d4463cc495eb24a8fcf4fa44300-1634091165.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">GVN Ivy M</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">14,880,000₫</span>
+                                        <span class="h4 home-product-item__price-new">13,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/axe_c4d6d5bec05042fba49e325ea27b6e41.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">GVN AXE M</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">8,490,000₫</span>
+                                        <span class="h4 home-product-item__price-new">7,890,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/ratchet_c6d03b5dee39455bbcb66144b29bcbfe.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">GVN Ratchet M</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">18,780,000₫</span>
+                                        <span class="h4 home-product-item__price-new">17,890,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/phantom_i3060_758431e74ce64eef8f67c109266f04ea.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">GVN PHANTOM I3060</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">41,030,000₫</span>
+                                        <span class="h4 home-product-item__price-new">38,490,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gvn_titan_plus_i3070ti_46ca0b8dfdaf4773bd5213afafff6229.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">GVN TITAN PLUS I3070TI</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">76,230,000₫</span>
+                                        <span class="h4 home-product-item__price-new">75,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/pc_gvn_neon_s_white_edition_c07ca697d5d6443db0971be2151cddb9.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">GVN Neon S White Edition</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">39,220,000₫</span>
+                                        <span class="h4 home-product-item__price-new">37,490,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gvn_phantom_plus_i3080_ddec914eb0b84dcca71a3f1b62f81ddc.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">GVN Phantom Plus i3080</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">73,410,000₫</span>
+                                        <span class="h4 home-product-item__price-new">72,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/viper_i1660ti_4cbfd777f6584f628fea04f925eea0dd.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">GVN Viper i1660Ti</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">28,080,000₫</span>
+                                        <span class="h4 home-product-item__price-new">27,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/phantom_5f48a8738fee4767af130fb977ac4792.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">GVN Phantom S</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">26,910,000₫</span>
+                                        <span class="h4 home-product-item__price-new">25,690,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/neon_91c0996086374bab98d8bd3a16162cf9.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">GVN Neon S</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">32,210,000₫</span>
+                                        <span class="h4 home-product-item__price-new">30,490,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/hextech_c04f3f1120e347598844a7cd83725f13.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">GVN Hextech S</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">23,320,000₫</span>
+                                        <span class="h4 home-product-item__price-new">22,290,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/ghost_3dedb620811c4c25935ffb5df0dbec71.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">GVN Ghost S</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">22,920,000₫</span>
+                                        <span class="h4 home-product-item__price-new">21,890,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/ratchet_c6d03b5dee39455bbcb66144b29bcbfe.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">GVN Ratchet M</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">18,780,000₫</span>
+                                        <span class="h4 home-product-item__price-new">17,890,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/garen_e1c63b8aef6f45eaa7e0ed0446a8f961.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">GVN Garen S</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">46,810,000₫</span>
+                                        <span class="h4 home-product-item__price-new">44,790,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-basic">
+                <footer>
+                    <div class="social"><a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-snapchat"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a></div>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">Home</a></li>
+                        <li class="list-inline-item"><a href="#">Services</a></li>
+                        <li class="list-inline-item"><a href="#">About</a></li>
+                        <li class="list-inline-item"><a href="#">Terms</a></li>
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <p class="copyright">Company Name © 2022</p>
+                </footer>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        </body>
+        
+        
+        <!-- Modal Layout-->
+        <!-- Form Login/register-->
+        <!-- Login Form -->
+        <form >
+
+            <div class="modaldn js-modaldn ">
+                <div class="auth-form ">
+                    <div class="closemodal ">
+                         <i class="closemodal__close-item fa-solid fa-xmark js-modal-close"></i>
+                        </div>
+                        <div class="auth-form__container">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">Đăng Nhập</h3>
+                                <span class="auth-form__switch-btn ">Đăng Ký</span>
+                            </div>
+            
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" name="username"
+                                id="username" placeholder="Tài khoản của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" name="password" id="password" placeholder="Mật khẩu của bạn">
+                                <span toggle="#password-field" class="bx fa-fw bx-hide field-icon click-eye"></span>
+                                <span class="focus-input100"></span>
+                                <span class="symbol-input100">
+                                <i class='bx bx-key'></i>
+                            </span>
+                            </div>
+                                
+                            <div class="auth-form__aside">
+                                <div class="auth-form__help">
+                                    <a href="" class="auth-form__link auth-form__help-forgot">Quên Mật Khẩu</a>
+                                    <span class="auth-form__help-separate"></span>
+                                    <a href="" class="auth-form__link">Cần Trợ Giúp?</a>
+                                </div>
+                            </div>
+            
+                            <div class="auth-form__controls">
+                                <button class="btn btn--normal auth-form__controls-back js-modal-comeback">TRỞ LẠI</button>
+                                <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                            </div>
+                        </div>
+            
+                        <div class="auth-form__socials">
+                            <a href="" class="auth-form__socials--fb btn btn--size-s btn--width-icon">
+                                <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                                <span class="auth-form__socials-tittle">
+                                    Kết Nối Với Facebook
+                                </span>
+                            </a>
+                            <a href="" class="auth-form__socials--gg btn btn--size-s btn--width-icon">
+                                <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                                <span class="auth-form__socials-tittle">
+                                    Kết Nối Với Google
+                                </span>
+                            </a>
+                        </div>
+                        </div>
+                </div>   
+            </div>
+        </form>
+        <!-- Register Form-->
+        <form onsubmit="signup()">
+            <div class="modaldk js-modaldk ">
+                <div class="auth-form">
+                    <div class="closemodal1 ">
+                        <i class="closemodal1__close-item fa-solid fa-xmark js-modal-close1"></i>
+                    </div>
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                                <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+            
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input"id="username" placeholder="Tài khoản của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input"id="password" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input"id="password" placeholder="Nhập lại mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" id="sdt"placeholder="SĐT của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input"id="Email" placeholder="Email của bạn">
+                            </div>
+                        </div>
+                                    
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng kí, bạn đã đồng ý với HLV-shop về
+                                <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+            
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal auth-form__controls-back js-modal-comeback1">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+        
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--fb btn btn--size-s btn--width-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                            <span class="auth-form__socials-tittle">
+                                Kết Nối Với Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__socials--gg btn btn--size-s btn--width-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials-tittle">
+                                Kết Nối Với Google
+                            </span>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </form>
+        <script>
+            const DNbtns = document.querySelectorAll('.js-auth-form-dn')
+            const modaldn = document.querySelector('.js-modaldn')
+            const modalclose= document.querySelector('.js-modal-close')
+            const modalcomeback= document.querySelector('.js-modal-comeback')
+            function showDNbtn(){
+                modaldn.classList.add('open')
+            }
+
+            function hideDNbtn(){
+                modaldn.classList.remove('open')
+            }
+
+            for(const DNbtn of DNbtns){
+                DNbtn.addEventListener('click',showDNbtn)
+            }
+            modalclose.addEventListener('click',hideDNbtn)
+            modalcomeback.addEventListener('click',hideDNbtn)
+        </script>
+        <script>
+            const Dkbtns = document.querySelectorAll('.js-auth-form-dk')
+            const modaldk = document.querySelector('.js-modaldk')
+            const modalclose1= document.querySelector('.js-modal-close1')
+            const modalcomeback1= document.querySelector('.js-modal-comeback1')
+            const modaldn1 = document.querySelector('.js-modaldn')
+            function showDKbtn(){
+                modaldk.classList.add('open')
+            }
+
+            function hideDKbtn(){
+                modaldk.classList.remove('open')
+            }
+
+            for(const DKbtn of Dkbtns){
+                DKbtn.addEventListener('click',showDKbtn)
+            }   
+            modalclose1.addEventListener('click',hideDKbtn)
+            modalcomeback1.addEventListener('click',hideDKbtn)
+            
+        </script>
+    </body>
+</html>

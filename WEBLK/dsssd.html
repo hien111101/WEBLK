@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.0-web/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese">
+    </head>
+    <body>
+        <div class="app">
+            <header class="header">
+                <div class="grid">
+                    <nav class="header__navbar">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item header__navbar-item--has-qr">
+                                Chào mừng bạn đến với HLV-shop
+                                
+                                <!-- Header QR Code-->
+                                <div class="header__qr">
+                                    <img src="./assets/img/qr.code.png" alt="QR CODE" class="header__qr-img">
+                                    <div class="header__qr-apps">
+                                        <a href="" class="header__qr-link">
+                                            <img src="./assets/img/GGplay.png" alt="GOOGLE PLAY" class="header__qr-download-img">
+                                        </a>
+                                        <a href="" class="header__qr-link">
+                                            <img src="./assets/img/appstore.png" alt="APPLE STORE" class="header__qr-download-img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+    
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item header__navbar-item--has-notify">
+                                <a href="" class="header__navbar-item-link">
+                                    <i class="header__navbar-icon fa-solid fa-bell"></i>
+                                    Thông báo
+                                </a>
+                                <div class="header__notify">
+                                    <header class="header__notify-head">
+                                        <h3>Thông báo mới nhận</h3>
+                                    </header>
+                                    <ul class="header__notify-list">
+                                        <li class="header__notify-item header__notify-item--view">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://file.hstatic.net/1000026716/file/banner_fanpage_cover_177c054358e44aa28ba42238fef1ac94.jpg" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">
+                                                        TỔNG HỢP KHUYẾN MÃI CHUỘT GAMING
+                                                    </span>
+                                                    <span class="header__notify-descriotion">
+                                                            MÔ TẢ TỔNG HỢP KHUYẾN MÃI CHUỘT GAMING
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item header__notify-item--view">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://file.hstatic.net/1000026716/file/file_goc_tai_nghe_fanpage_cover_2954b760a9974fbe9ad0ca18ed90fb5b.jpg" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">
+                                                        TỔNG HỢP KHUYẾN MÃI TAI NGHE
+                                                    </span>
+                                                    <span class="header__notify-descriotion">
+                                                            MÔ TẢ TỔNG HỢP KHUYẾN MÃI TAI NGHE
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item header__notify-item--view">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://file.hstatic.net/1000026716/file/banner_fanpage_cover_4089dfa982b1479aad45e84d4e3b8248.png" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">
+                                                        TỔNG HỢP KHUYẾN MÃI BÀN PHÍM
+                                                    </span>
+                                                    <span class="header__notify-descriotion">
+                                                            MÔ TẢ TỔNG HỢP KHUYẾN MÃI BÀN PHÍM
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item header__notify-item--view">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://file.hstatic.net/1000026716/file/1_fanpage_60235733de354e57967c0f78936aa0c4.png" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">
+                                                        KHUYẾN MÃI GAMING GEAR LOGITECH
+                                                    </span>
+                                                    <span class="header__notify-descriotion">
+                                                            MÔ TẢ KHUYẾN MÃI GAMING GEAR LOGITECH
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                        <footer class="header__notify-footer">
+                                            <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                        </footer>
+                                </div>
+                                <a href="" class="header__navbar-item-link">
+                                    <i class="header__navbar-icon fa-solid fa-circle-question"></i>
+                                    Trợ giúp
+                                </a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link">Khuyến Mãi</a>
+                            </li>
+                            <button class="btn btn--dn header__navbar-item header__navbar-item--strong header__navbar-item--seperate js-auth-form-dn">Đăng nhập</button>
+                            <button class="btn btn--dk header__navbar-item header__navbar-item--strong js-auth-form-dk">Đăng kí</button>
+                            <!-- <li class="header__navbar-item header__navbar-user">
+                                <img src="https://cf.shopee.vn/file/3feb5e167370fcf13961ee8c00362a3c_tn" alt="" class="header__navbar-user-img">
+                                <span class="header__navbar-user-name">Huynh Hien</span>
+                                <ul class="header__navbar-user-menu">
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Tài Khoản Của Tôi</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Đơn Mua</a>
+                                    </li>
+                                    <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                        <a href="">Đăng Xuất</a>
+                                    </li>
+                                </ul>
+
+                            </li> -->
+                        </ul>
+                    </nav>
+                    <!-- Header-with-search -->
+                    <div class="header-with-search">
+                        <div class="header__logo">
+                            <a href="index.html" class="header__logo-link">
+                                <p>
+                                    <img src="https://thuvienlogo.com/data/03/logo-chu-z-dep-03.jpg" alt="" class="header__logo-img">
+                                </p>  
+                            </a>                       
+                        </div>
+
+                        <div class="header__search">
+                            <div class="header__search-input-wrap">
+                                <input type="text" class="header__search-input" placeholder="Tìm Kiếm Sản Phẩm">
+                                <!-- search history -->
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Lịch Sử Tìm Kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">Ram</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">VGA</a>
+                                        </li><li class="header__search-history-item">
+                                            <a href="">Core Intel 5</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__search-select">
+                                <span class="header__search-select-label">
+                                    Trong Shop
+                                </span>
+                                <i class="header__search-select-icon fa-solid fa-angle-down"></i>
+
+                                <ul class="header__search-option">
+                                    <li class="header__search-option-item header__search-option-item-active">
+                                        <span>Trong Shop</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="header__search-option-item">
+                                        <span>Ngoài Shop</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <!-- Giỏ Hàng -->
+                        <div class="header__cart">
+                            <div class="header__cart-wrap">
+                                <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                                <span class="header__cart-notice">0</span>
+                                <!-- co san pham trong gio hang -->
+                                <div class="header__cart-list">
+                                    <img src="./assets/img/no-cart.png" alt="" class="header__cart-nocart-img">
+                                    <span class="header__cart-list-nocart-mess">Chưa Có Sản Phẩm</span>
+                                    <!-- <h4 class="header__cart-heading">Sản Phẩm Đã Thêm</h4>
+                                    <ul class="header__cart-list-item">
+                                        <li class="header__cart-item">
+                                            <img src="https://product.hstatic.net/1000026716/product/gearvn.com-products-intel-core-i5-10400f-2_69ea122d78884db8985a0b5b2f23c206.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Intel Core i5 10400F</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">4,390,000₫</span>
+                                                        <SPAN class="header__cart-item-multiply">x</SPAN>
+                                                        <span class="header__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân Loại: CPU Intel
+                                                    </span>
+                                                    <span class="header__cart-item-delete">Xóa</span>
+        
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://product.hstatic.net/1000026716/product/01_3ed8356635034acc8ed66a54959d2dc2.png" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">MSI GeForce RTX 3060 GAMING...</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">14,490,000₫</span>
+                                                        <SPAN class="header__cart-item-multiply">x</SPAN>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân Loại: Card Màn Hình
+                                                    </span>
+                                                    <span class="header__cart-item-delete">Xóa</span>
+        
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://product.hstatic.net/1000026716/product/tuf-gaming-b460m-plus-1_1306ef92b1014fe8ad5c2fc8f2f787a2.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">ASUS TUF GAMING B460M-PLUS</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">2,690,000₫</span>
+                                                        <SPAN class="header__cart-item-multiply">x</SPAN>
+                                                        <span class="header__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân Loại: Main Board
+                                                    </span>
+                                                    <span class="header__cart-item-delete">Xóa</span>
+        
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="header__cart-view btn btn--primary">Xem Giỏ Hàng</a>
+                                </div> -->
+                                 <!-- No Cart : header__cart-list--no-cart (Khong co Gio Hang)-->
+                                <div class="header__cart-list header__cart-list--no-cart">
+                                    <img src="./assets/img/no-cart.png" alt="" class="header__cart-nocart-img">
+                                    <span class="header__cart-list-nocart-mess">Chưa Có Sản Phẩm</span>
+                                </div>
+                                <!-- Cart item (Gio Hàng) -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <img src="https://file.hstatic.net/1000026716/collection/banner_2_web_header_1280x450_7c990efa61a54e7195ef66cc4c3515b0.jpg" width="100%" class="picture" alt="">
+                <div class="grid__colum-10">
+                    <span class="home-filter__label">Ổ cứng SSD</span>
+                </div>
+                <div class="home-product">
+                    </a>
+                    <div class="grid__row">
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/ssd-lexar-120gb-1_0c38fb95b5f549f39b758f38ab2dda41.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD Lexar NS100 RB 2.5'' SATA3 128GB</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">790,000₫</span>
+                                        <span class="h4 home-product-item__price-new">490,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/ssd1_3ed39f5adf9348dda96a4ac8022275a5.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD KIMTIGO 240GB 2.5" SATA III</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">690,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/ston-a400-480gb-2-5-sata-iii-1_-_copy_33e62d6fbef94f12ad2386515aa0e947_c303879e2dbe4be8ae2aa2656942a6b8.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD Kingston A400 120GB 2.5' SATA III</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">990,000₫</span>
+                                        <span class="h4 home-product-item__price-new">690,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/1_a88f89d4c25943d9ad356ba5bef637b5.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD Lexar NQ100 2.5'' SATA3 240GB</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">990,000₫</span>
+                                        <span class="h4 home-product-item__price-new">790,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/ssd_240gb_gigabyte_gearvn00.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Gigabyte SSD 240GB 2.5" Sata 3 ( GP-GSTFS31240GNTD )</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">1,090,000₫</span>
+                                        <span class="h4 home-product-item__price-new">790,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/ssd-kingston-a400-240gb-2-5-sata-iii-2_fc7143a4559145d69e92b50f50f7938d.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD Kingston A400 240GB 2.5' SATA III</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">990,000₫</span>
+                                        <span class="h4 home-product-item__price-new">850,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/ssd_31e6610041e74ca8bc06d3bc58040f89.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD PNY CS1031 M.2 2280 256GB Gen 3x4</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">990,000₫</span>
+                                        <span class="h4 home-product-item__price-new">890,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/sd-kingston-nv1-500gb-m-2-pcie-nvme-1_83a07c394b514f75b5773b7c2d315114_e8f1f6f3e13a4ca59f76fdd40d7ca80a.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD Kingston NV1 250GB M.2 PCIe NVMe</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gigabyte_m.2_pcie_ssd_256gb__gearvn00_60fc34efa51f41fbb2ec400fcb465bc0.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD GIGABYTE M.2 PCIe 256GB</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">1,190,000₫</span>
+                                        <span class="h4 home-product-item__price-new">990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn-o-cung-ssd-kingston-kc2500-1_a26054868aac4bf3b336230725abe7f3.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Ổ cứng SSD Kingston KC2500 250GB PCIe Gen 3.0</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">1,590,000₫</span>
+                                        <span class="h4 home-product-item__price-new">1,290,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/wd1_aad3a79ac08d4e5a8650ba141d95686e.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD WD Black SN750SE 250GB M.2 PCIe gen4 NVMe</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">1,790,000₫</span>
+                                        <span class="h4 home-product-item__price-new">1,490,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn.com-products-ssd-kingston-a400-480gb-2-5-sata-iii-1_-_copy_33e62d6fbef94f12ad2386515aa0e947.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD Kingston A400 480GB 2.5' SATA III</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">1,890,000₫</span>
+                                        <span class="h4 home-product-item__price-new">1,490,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/aorus_rgb_ssd_gearvn_0c59ed6ab7d048f58f70eea772b92086.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Gigabyte SSD AORUS RGB M.2 NVMe 256GB</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">1,990,000₫</span>
+                                        <span class="h4 home-product-item__price-new">1,690,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/870_evo_1_1c78686c947c458a849dd2d0b78b0d11.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD Samsung 870 EVO 500GB 2.5' SATA III</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">2,390,000₫</span>
+                                        <span class="h4 home-product-item__price-new">2,290,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/aorus-m2-500gb_gigabyte_a4f1a17ae5834a77b9e70425f4b9ef5f.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD GIGABYTE AORUS 500GB M.2 PCIe NVMe gen 4 (Bản không heatsink)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">3,290,000₫</span>
+                                        <span class="h4 home-product-item__price-new">3,090,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/aorus_rgb_aic_nvme_ssd_512gb__gearvn00_e0201482a02c442c9dcfe911d4feb86d.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD AORUS AIC NVMe SSD 512GB RGB</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">3,650,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/870_evo_1_8c7f126580d248968c3fd6852c64861e.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD Samsung 870 EVO 1TB 2.5' SATA III</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">4,290,000₫</span>
+                                        <span class="h4 home-product-item__price-new">3,890,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/aorus_nvme_gen4_ssd_1tb__gearvn_68a18743620243cb878ee98c4cf76fae.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD Gigabyte AORUS NVMe Gen4 500GB (GP-ASM2NE6500GTTD)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">4,990,000₫</span>
+                                        <span class="h4 home-product-item__price-new">3,690,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn-ssd-seagate-firecuda-520-500gb-512gb-gen4-13323_a6e2b44d063f46279c0a80c8be76d2c0.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD Seagate Firecuda 520 500GB Gen4</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">3,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/ssd-gigabyte-aorus-1tb-m-2-pcie-nvme-gen-4_6bd585814a7048c1a6d78c4b1831b9b1.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD GIGABYTE AORUS 1TB M.2 PCIe NVMe gen 4 (Bản không heatsink)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">4,990,000₫</span>
+                                        <span class="h4 home-product-item__price-new">4,890,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn-ssd-samsung-980-pro-1tb-m-2-nvme-mz-v8p1t0bw-4_c4ff261dd6374342857f7516ca984e65.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD SamSung 980 PRO 1TB M.2 PCIe gen 4 NVMe (MZ-V8P1T0BW)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">6,490,000₫</span>
+                                        <span class="h4 home-product-item__price-new">5,190,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/aorus_rgb_aic_nvme_ssd_512gb__gearvn01_db1c807a2b294cc888f29cf6bfa104ef.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD AORUS AIC NVMe SSD 1TB RGB</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">5,550,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/02_7adf11b793c04075995937c07cf94a3c.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD Gigabyte Aorus 7000s 1TB M.2 PCIe Gen4 NVMe</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">5,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/ssd-samsung-980-pro-2tb-m2-pcie-gen4-nvme-0_98368253d6a74d1f9e2407555ffaf2de.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD SamSung 980 PRO 2TB M.2 PCIe gen 4 NVMe (MZ-V8P2T0BW)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">12,990,000₫</span>
+                                        <span class="h4 home-product-item__price-new">10,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/kc3000-1_f1a79688f39d450faafc844a40c72749.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD Kingston KC3000 2TB M.2 PCIe gen 4 NVMe</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">11,990,000₫</span>
+                                        <span class="h4 home-product-item__price-new">10,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn.com-products-ssd-samsung-860-qvo-4tb_3_d420e6ef97f046398599c649863a8e19.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD Samsung 870 QVO 4TB 2.5 Inch SATA III</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">10,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/01_8609fd5605e84192b4f0cee9385ee9f0.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD Gigabyte Aorus 7000s 2TB M.2 PCIe Gen4 NVMe</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">11,490,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/870_qvo_35b0cdd4216e4423ae5c59b69b113a64.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">SSD Samsung 870 QVO 8TB 2.5 Inch SATA III</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">20,490,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-basic">
+                <footer>
+                    <div class="social"><a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-snapchat"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a></div>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">Home</a></li>
+                        <li class="list-inline-item"><a href="#">Services</a></li>
+                        <li class="list-inline-item"><a href="#">About</a></li>
+                        <li class="list-inline-item"><a href="#">Terms</a></li>
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <p class="copyright">Company Name © 2022</p>
+                </footer>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        </body>
+        
+        
+        <!-- Modal Layout-->
+        <!-- Form Login/register-->
+        <!-- Login Form -->
+        <form >
+
+            <div class="modaldn js-modaldn ">
+                <div class="auth-form ">
+                    <div class="closemodal ">
+                         <i class="closemodal__close-item fa-solid fa-xmark js-modal-close"></i>
+                        </div>
+                        <div class="auth-form__container">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">Đăng Nhập</h3>
+                                <span class="auth-form__switch-btn ">Đăng Ký</span>
+                            </div>
+            
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" name="username"
+                                id="username" placeholder="Tài khoản của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" name="password" id="password" placeholder="Mật khẩu của bạn">
+                                <span toggle="#password-field" class="bx fa-fw bx-hide field-icon click-eye"></span>
+                                <span class="focus-input100"></span>
+                                <span class="symbol-input100">
+                                <i class='bx bx-key'></i>
+                            </span>
+                            </div>
+                                
+                            <div class="auth-form__aside">
+                                <div class="auth-form__help">
+                                    <a href="" class="auth-form__link auth-form__help-forgot">Quên Mật Khẩu</a>
+                                    <span class="auth-form__help-separate"></span>
+                                    <a href="" class="auth-form__link">Cần Trợ Giúp?</a>
+                                </div>
+                            </div>
+            
+                            <div class="auth-form__controls">
+                                <button class="btn btn--normal auth-form__controls-back js-modal-comeback">TRỞ LẠI</button>
+                                <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                            </div>
+                        </div>
+            
+                        <div class="auth-form__socials">
+                            <a href="" class="auth-form__socials--fb btn btn--size-s btn--width-icon">
+                                <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                                <span class="auth-form__socials-tittle">
+                                    Kết Nối Với Facebook
+                                </span>
+                            </a>
+                            <a href="" class="auth-form__socials--gg btn btn--size-s btn--width-icon">
+                                <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                                <span class="auth-form__socials-tittle">
+                                    Kết Nối Với Google
+                                </span>
+                            </a>
+                        </div>
+                        </div>
+                </div>   
+            </div>
+        </form>
+        <!-- Register Form-->
+        <form onsubmit="signup()">
+            <div class="modaldk js-modaldk ">
+                <div class="auth-form">
+                    <div class="closemodal1 ">
+                        <i class="closemodal1__close-item fa-solid fa-xmark js-modal-close1"></i>
+                    </div>
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                                <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+            
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input"id="username" placeholder="Tài khoản của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input"id="password" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input"id="password" placeholder="Nhập lại mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" id="sdt"placeholder="SĐT của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input"id="Email" placeholder="Email của bạn">
+                            </div>
+                        </div>
+                                    
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng kí, bạn đã đồng ý với HLV-shop về
+                                <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+            
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal auth-form__controls-back js-modal-comeback1">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+        
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--fb btn btn--size-s btn--width-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                            <span class="auth-form__socials-tittle">
+                                Kết Nối Với Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__socials--gg btn btn--size-s btn--width-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials-tittle">
+                                Kết Nối Với Google
+                            </span>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </form>
+        <script>
+            const DNbtns = document.querySelectorAll('.js-auth-form-dn')
+            const modaldn = document.querySelector('.js-modaldn')
+            const modalclose= document.querySelector('.js-modal-close')
+            const modalcomeback= document.querySelector('.js-modal-comeback')
+            function showDNbtn(){
+                modaldn.classList.add('open')
+            }
+
+            function hideDNbtn(){
+                modaldn.classList.remove('open')
+            }
+
+            for(const DNbtn of DNbtns){
+                DNbtn.addEventListener('click',showDNbtn)
+            }
+            modalclose.addEventListener('click',hideDNbtn)
+            modalcomeback.addEventListener('click',hideDNbtn)
+        </script>
+        <script>
+            const Dkbtns = document.querySelectorAll('.js-auth-form-dk')
+            const modaldk = document.querySelector('.js-modaldk')
+            const modalclose1= document.querySelector('.js-modal-close1')
+            const modalcomeback1= document.querySelector('.js-modal-comeback1')
+            const modaldn1 = document.querySelector('.js-modaldn')
+            function showDKbtn(){
+                modaldk.classList.add('open')
+            }
+
+            function hideDKbtn(){
+                modaldk.classList.remove('open')
+            }
+
+            for(const DKbtn of Dkbtns){
+                DKbtn.addEventListener('click',showDKbtn)
+            }   
+            modalclose1.addEventListener('click',hideDKbtn)
+            modalcomeback1.addEventListener('click',hideDKbtn)
+            
+        </script>
+    </body>
+</html>

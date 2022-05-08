@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.0-web/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese">
+    </head>
+    <body>
+        <div class="app">
+            <header class="header">
+                <div class="grid">
+                    <nav class="header__navbar">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item header__navbar-item--has-qr">
+                                Chào mừng bạn đến với HLV-shop
+                                
+                                <!-- Header QR Code-->
+                                <div class="header__qr">
+                                    <img src="./assets/img/qr.code.png" alt="QR CODE" class="header__qr-img">
+                                    <div class="header__qr-apps">
+                                        <a href="" class="header__qr-link">
+                                            <img src="./assets/img/GGplay.png" alt="GOOGLE PLAY" class="header__qr-download-img">
+                                        </a>
+                                        <a href="" class="header__qr-link">
+                                            <img src="./assets/img/appstore.png" alt="APPLE STORE" class="header__qr-download-img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+    
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item header__navbar-item--has-notify">
+                                <a href="" class="header__navbar-item-link">
+                                    <i class="header__navbar-icon fa-solid fa-bell"></i>
+                                    Thông báo
+                                </a>
+                                <div class="header__notify">
+                                    <header class="header__notify-head">
+                                        <h3>Thông báo mới nhận</h3>
+                                    </header>
+                                    <ul class="header__notify-list">
+                                        <li class="header__notify-item header__notify-item--view">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://file.hstatic.net/1000026716/file/banner_fanpage_cover_177c054358e44aa28ba42238fef1ac94.jpg" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">
+                                                        TỔNG HỢP KHUYẾN MÃI CHUỘT GAMING
+                                                    </span>
+                                                    <span class="header__notify-descriotion">
+                                                            MÔ TẢ TỔNG HỢP KHUYẾN MÃI CHUỘT GAMING
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item header__notify-item--view">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://file.hstatic.net/1000026716/file/file_goc_tai_nghe_fanpage_cover_2954b760a9974fbe9ad0ca18ed90fb5b.jpg" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">
+                                                        TỔNG HỢP KHUYẾN MÃI TAI NGHE
+                                                    </span>
+                                                    <span class="header__notify-descriotion">
+                                                            MÔ TẢ TỔNG HỢP KHUYẾN MÃI TAI NGHE
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item header__notify-item--view">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://file.hstatic.net/1000026716/file/banner_fanpage_cover_4089dfa982b1479aad45e84d4e3b8248.png" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">
+                                                        TỔNG HỢP KHUYẾN MÃI BÀN PHÍM
+                                                    </span>
+                                                    <span class="header__notify-descriotion">
+                                                            MÔ TẢ TỔNG HỢP KHUYẾN MÃI BÀN PHÍM
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item header__notify-item--view">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://file.hstatic.net/1000026716/file/1_fanpage_60235733de354e57967c0f78936aa0c4.png" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">
+                                                        KHUYẾN MÃI GAMING GEAR LOGITECH
+                                                    </span>
+                                                    <span class="header__notify-descriotion">
+                                                            MÔ TẢ KHUYẾN MÃI GAMING GEAR LOGITECH
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                        <footer class="header__notify-footer">
+                                            <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                        </footer>
+                                </div>
+                                <a href="" class="header__navbar-item-link">
+                                    <i class="header__navbar-icon fa-solid fa-circle-question"></i>
+                                    Trợ giúp
+                                </a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link">Khuyến Mãi</a>
+                            </li>
+                            <button class="btn btn--dn header__navbar-item header__navbar-item--strong header__navbar-item--seperate js-auth-form-dn">Đăng nhập</button>
+                            <button class="btn btn--dk header__navbar-item header__navbar-item--strong js-auth-form-dk">Đăng kí</button>
+                            <!-- <li class="header__navbar-item header__navbar-user">
+                                <img src="https://cf.shopee.vn/file/3feb5e167370fcf13961ee8c00362a3c_tn" alt="" class="header__navbar-user-img">
+                                <span class="header__navbar-user-name">Huynh Hien</span>
+                                <ul class="header__navbar-user-menu">
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Tài Khoản Của Tôi</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Đơn Mua</a>
+                                    </li>
+                                    <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                        <a href="">Đăng Xuất</a>
+                                    </li>
+                                </ul>
+
+                            </li> -->
+                        </ul>
+                    </nav>
+                    <!-- Header-with-search -->
+                    <div class="header-with-search">
+                        <div class="header__logo">
+                            <a href="index.html" class="header__logo-link">
+                                <p>
+                                    <img src="https://thuvienlogo.com/data/03/logo-chu-z-dep-03.jpg" alt="" class="header__logo-img">
+                                </p>  
+                            </a>                       
+                        </div>
+
+                        <div class="header__search">
+                            <div class="header__search-input-wrap">
+                                <input type="text" class="header__search-input" placeholder="Tìm Kiếm Sản Phẩm">
+                                <!-- search history -->
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Lịch Sử Tìm Kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">Ram</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">VGA</a>
+                                        </li><li class="header__search-history-item">
+                                            <a href="">Core Intel 5</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__search-select">
+                                <span class="header__search-select-label">
+                                    Trong Shop
+                                </span>
+                                <i class="header__search-select-icon fa-solid fa-angle-down"></i>
+
+                                <ul class="header__search-option">
+                                    <li class="header__search-option-item header__search-option-item-active">
+                                        <span>Trong Shop</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="header__search-option-item">
+                                        <span>Ngoài Shop</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <!-- Giỏ Hàng -->
+                        <div class="header__cart">
+                            <div class="header__cart-wrap">
+                                <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                                <span class="header__cart-notice">0</span>
+                                <!-- co san pham trong gio hang -->
+                                <div class="header__cart-list">
+                                    <img src="./assets/img/no-cart.png" alt="" class="header__cart-nocart-img">
+                                    <span class="header__cart-list-nocart-mess">Chưa Có Sản Phẩm</span>
+                                    <!-- <h4 class="header__cart-heading">Sản Phẩm Đã Thêm</h4>
+                                    <ul class="header__cart-list-item">
+                                        <li class="header__cart-item">
+                                            <img src="https://product.hstatic.net/1000026716/product/gearvn.com-products-intel-core-i5-10400f-2_69ea122d78884db8985a0b5b2f23c206.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Intel Core i5 10400F</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">4,390,000₫</span>
+                                                        <SPAN class="header__cart-item-multiply">x</SPAN>
+                                                        <span class="header__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân Loại: CPU Intel
+                                                    </span>
+                                                    <span class="header__cart-item-delete">Xóa</span>
+        
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://product.hstatic.net/1000026716/product/01_3ed8356635034acc8ed66a54959d2dc2.png" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">MSI GeForce RTX 3060 GAMING...</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">14,490,000₫</span>
+                                                        <SPAN class="header__cart-item-multiply">x</SPAN>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân Loại: Card Màn Hình
+                                                    </span>
+                                                    <span class="header__cart-item-delete">Xóa</span>
+        
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://product.hstatic.net/1000026716/product/tuf-gaming-b460m-plus-1_1306ef92b1014fe8ad5c2fc8f2f787a2.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">ASUS TUF GAMING B460M-PLUS</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">2,690,000₫</span>
+                                                        <SPAN class="header__cart-item-multiply">x</SPAN>
+                                                        <span class="header__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân Loại: Main Board
+                                                    </span>
+                                                    <span class="header__cart-item-delete">Xóa</span>
+        
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="header__cart-view btn btn--primary">Xem Giỏ Hàng</a>
+                                </div> -->
+                                 <!-- No Cart : header__cart-list--no-cart (Khong co Gio Hang)-->
+                                <div class="header__cart-list header__cart-list--no-cart">
+                                    <img src="./assets/img/no-cart.png" alt="" class="header__cart-nocart-img">
+                                    <span class="header__cart-list-nocart-mess">Chưa Có Sản Phẩm</span>
+                                </div>
+                                <!-- Cart item (Gio Hàng) -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <img src="https://file.hstatic.net/1000026716/collection/banner-01_web_header_1280x450_b2a99da0d0694b9c8494218f07e3cc47.jpg" width="100%" class="picture" alt="">
+                <div class="grid__colum-10">
+                    <span class="home-filter__label">RAM PC - Máy tính</span>    
+                </div>
+                <div class="home-product">
+                    </a>
+                    <div class="grid__row">
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn-ram-pny-xlr8-1x8gb-bus-3200-rgb-white-666_be03dabd576f43ed93120fcea2dcb601.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Ram PNY XLR8 1x8GB 3200 RGB White</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">1,190,000₫</span>
+                                        <span class="h4 home-product-item__price-new">990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn-ram-teamgroup-t-force-vulcan-z-gray-1_c7fd772c9e9f4b20ab1b5f093913ec0e.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">RAM T-Group T-Force Vulcan Z Gray 8GB 3200 (TLZGD48G3200HC16F01)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">890,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn.com-products-8gb-ddr4-1x8g-3200-ram-pny-xlr8-gaming-1_ebc7adc549654b31927d8cb2f51b8917.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Ram PNY XLR8 1x8GB 3200 RGB</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">1,190,000₫</span>
+                                        <span class="h4 home-product-item__price-new">990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/b009154f9963656b7a55f1a93b91f1b8_9a41f0b66e26430580accff8ad7706ea_811b8f21341a4872969f36c91953dbf3.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Ram T-Group T-Force Delta 1x8GB 3200 RGB Black (TF3D48G3200HC16C01)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">1,290,000₫</span>
+                                        <span class="h4 home-product-item__price-new">1,150,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/xlr_8_16g_a_90a8155916954ca2a8d1c1cb2406f50e.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Ram PNY XLR8 1x16GB 3200 RGB (MD32GK2D4320016XRGB)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">1,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/156283929914_f410918a2e4f47cbad2e8cf0be97de4a.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Ram G.Skill Trident Z Neo 1x8GB 3600 cas16 CL16-16-16-36 (F4-3600C16D-16GTZN)/h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">2,290,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/1_5845b541f50b4b219aaf90eec9406185.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">RAM ADATA XPG Hunter DDR5 8G Bus 5200</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">2,390,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/vengeance-pro-rgb-white-3_bd3e4fde39c84f13929cc874f3503ef0_33e700e3a1d6478aa3e52b409b22dfa6.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Ram Corsair Vengeance Pro RGB 16GB (2x8GB) 3200 White (CMW16GX4M2E3200C16W)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">3,390,000₫</span>
+                                        <span class="h4 home-product-item__price-new">2,590,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gvn_cs1_b9892f84cf0344c5b8d890e4541e1d99_007cfdb8d8b14d3f8fd42b2295403dd6.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Ram Corsair Vengeance RS RGB 16GB (2x8GB) 3200 (CMG16GX4M2E3200C16)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">2,580,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/tzr_fixed_cf02364b3c3c43168de6e00e6dd56c5e.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Ram G.Skill Trident Z RGB Royal Elite Gold 2x8GB 3600 (F4-3600C16D-16GTEGC)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">5,490,000₫</span>
+                                        <span class="h4 home-product-item__price-new">4,380,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/162303503612_b7232eb864384e2596ddaf3f766b6ef3.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Ram G.Skill Trident Z RGB Royal Elite Silver 2x8GB 3600 (F4-3600C16D-16GTESC)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">5,490,000₫</span>
+                                        <span class="h4 home-product-item__price-new">4,490,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/ram_gskill_trident_neo_gearvn02_26be2edaa2bf491cbd1fd12bc2bfd545.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Ram G.Skill Trident Z Neo 2x8GB 3600 cas16 CL16-16-16-36 (F4-3600C16D-16GTZN)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">4,580,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gskill_tridentz_royal_gearvn00_9a5eff387ff3402fa3c38f800b786db1.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Ram G.Skill Trident Z RGB Royal Gold 2x8GB 5066mhz (F4-5066C20D-16GTRG)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">5,990,000₫</span>
+                                        <span class="h4 home-product-item__price-new">4,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/orsair-dominator-platinum-rgb-white-2_de089f0593aa4b429c6da5e07e53b9f3_2555497604214b6ea1f17ae8b1e58b68.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Ram Corsair Dominator 32GB (2x16GB) RGB 3200 White (CMT32GX4M2E3200C16W)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">7,190,000₫</span>
+                                        <span class="h4 home-product-item__price-new">6,490,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/ktc-product-memory-renegade-ddr4-rgb-kit2-2-zm-lg_d68cedc32da1485abc639157e2923628.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Ram Kingston Fury RGB 2x16GB 3200 Renegade (KF432C16RB1AK2/32)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">5,690,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/ram_gskill_trident_neo_gearvn00_e34bd126716a483f82db1fa079f2be85.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Ram G.Skill Trident Z Neo 2x16GB 3600 cas16 CL16-16-16-36 (F4-3600C16D-32GTZN)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">8,990,000₫</span>
+                                        <span class="h4 home-product-item__price-new">7,380,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/domi_d5_4_ced8049b23ad460f82d189c164337b1c_9b7c29c62b5745c58ea2f76a0fab0c12.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">RAM Corsair Dominator 32GB (2x16GB) RGB 5200 DDR5 (CMT32GX5M2B5200C40)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">9,590,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/111_5e1de46adfe74e4eadb822e1793ea8d7.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">RAM G.Skill Ripjaws S5 32GB (2x16GB) 5600 DDR5 Black (F5-5600U3636C16GX2-RS5K)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">11,990,000₫</span>
+                                        <span class="h4 home-product-item__price-new">9,980,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/designare-memory-64gb--2x32gb-3200mhz-3_12434687de5940de9869a4eb2afff9d8.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Ram Gigabyte 64GB (2 x 32GB) Designare 3200</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">10,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/earvn-ram-corsair-dominator-platinum-32gb-2x16gb-rgb-5600-ddr5-white-1_8ce8cae05ea643cc96a82517dc326333.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">RAM Corsair Dominator Platinum 32GB (2x16GB) RGB 5600 DDR5 White (CMT32GX5M2B5600C36W)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">12,590,000₫</span>
+                                        <span class="h4 home-product-item__price-new">11,790,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/z51_fde6aa163b894e65a948515bcddbeb06.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">RAM G.Skill Trident Z5 RGB 32GB (2x16GB) 5600 DDR5 Silver (F5-5600U3636C16GX2-TZ5RS)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">12,490,000₫</span>
+                                        <span class="h4 home-product-item__price-new">11,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/z51_fde6aa163b894e65a948515bcddbeb06_da925e8d6d674c2aaf5b6dc01485477c.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">RAM DDR5 G.Skill Trident Z5 RGB 1x16GB 6000mhz Silver CL36 (F5-6000J3636F16GX2-TZ5RS)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">13,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-basic">
+                <footer>
+                    <div class="social"><a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-snapchat"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a></div>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">Home</a></li>
+                        <li class="list-inline-item"><a href="#">Services</a></li>
+                        <li class="list-inline-item"><a href="#">About</a></li>
+                        <li class="list-inline-item"><a href="#">Terms</a></li>
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <p class="copyright">Company Name © 2022</p>
+                </footer>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        </body>
+        
+        
+        <!-- Modal Layout-->
+        <!-- Form Login/register-->
+        <!-- Login Form -->
+        <form >
+
+            <div class="modaldn js-modaldn ">
+                <div class="auth-form ">
+                    <div class="closemodal ">
+                         <i class="closemodal__close-item fa-solid fa-xmark js-modal-close"></i>
+                        </div>
+                        <div class="auth-form__container">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">Đăng Nhập</h3>
+                                <span class="auth-form__switch-btn ">Đăng Ký</span>
+                            </div>
+            
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" name="username"
+                                id="username" placeholder="Tài khoản của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" name="password" id="password" placeholder="Mật khẩu của bạn">
+                                <span toggle="#password-field" class="bx fa-fw bx-hide field-icon click-eye"></span>
+                                <span class="focus-input100"></span>
+                                <span class="symbol-input100">
+                                <i class='bx bx-key'></i>
+                            </span>
+                            </div>
+                                
+                            <div class="auth-form__aside">
+                                <div class="auth-form__help">
+                                    <a href="" class="auth-form__link auth-form__help-forgot">Quên Mật Khẩu</a>
+                                    <span class="auth-form__help-separate"></span>
+                                    <a href="" class="auth-form__link">Cần Trợ Giúp?</a>
+                                </div>
+                            </div>
+            
+                            <div class="auth-form__controls">
+                                <button class="btn btn--normal auth-form__controls-back js-modal-comeback">TRỞ LẠI</button>
+                                <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                            </div>
+                        </div>
+            
+                        <div class="auth-form__socials">
+                            <a href="" class="auth-form__socials--fb btn btn--size-s btn--width-icon">
+                                <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                                <span class="auth-form__socials-tittle">
+                                    Kết Nối Với Facebook
+                                </span>
+                            </a>
+                            <a href="" class="auth-form__socials--gg btn btn--size-s btn--width-icon">
+                                <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                                <span class="auth-form__socials-tittle">
+                                    Kết Nối Với Google
+                                </span>
+                            </a>
+                        </div>
+                        </div>
+                </div>   
+            </div>
+        </form>
+        <!-- Register Form-->
+        <form onsubmit="signup()">
+            <div class="modaldk js-modaldk ">
+                <div class="auth-form">
+                    <div class="closemodal1 ">
+                        <i class="closemodal1__close-item fa-solid fa-xmark js-modal-close1"></i>
+                    </div>
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                                <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+            
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input"id="username" placeholder="Tài khoản của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input"id="password" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input"id="password" placeholder="Nhập lại mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" id="sdt"placeholder="SĐT của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input"id="Email" placeholder="Email của bạn">
+                            </div>
+                        </div>
+                                    
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng kí, bạn đã đồng ý với HLV-shop về
+                                <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+            
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal auth-form__controls-back js-modal-comeback1">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+        
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--fb btn btn--size-s btn--width-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                            <span class="auth-form__socials-tittle">
+                                Kết Nối Với Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__socials--gg btn btn--size-s btn--width-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials-tittle">
+                                Kết Nối Với Google
+                            </span>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </form>
+        <script>
+            const DNbtns = document.querySelectorAll('.js-auth-form-dn')
+            const modaldn = document.querySelector('.js-modaldn')
+            const modalclose= document.querySelector('.js-modal-close')
+            const modalcomeback= document.querySelector('.js-modal-comeback')
+            function showDNbtn(){
+                modaldn.classList.add('open')
+            }
+
+            function hideDNbtn(){
+                modaldn.classList.remove('open')
+            }
+
+            for(const DNbtn of DNbtns){
+                DNbtn.addEventListener('click',showDNbtn)
+            }
+            modalclose.addEventListener('click',hideDNbtn)
+            modalcomeback.addEventListener('click',hideDNbtn)
+        </script>
+        <script>
+            const Dkbtns = document.querySelectorAll('.js-auth-form-dk')
+            const modaldk = document.querySelector('.js-modaldk')
+            const modalclose1= document.querySelector('.js-modal-close1')
+            const modalcomeback1= document.querySelector('.js-modal-comeback1')
+            const modaldn1 = document.querySelector('.js-modaldn')
+            function showDKbtn(){
+                modaldk.classList.add('open')
+            }
+
+            function hideDKbtn(){
+                modaldk.classList.remove('open')
+            }
+
+            for(const DKbtn of Dkbtns){
+                DKbtn.addEventListener('click',showDKbtn)
+            }   
+            modalclose1.addEventListener('click',hideDKbtn)
+            modalcomeback1.addEventListener('click',hideDKbtn)
+            
+        </script>
+    </body>
+</html>

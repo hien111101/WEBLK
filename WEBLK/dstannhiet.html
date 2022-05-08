@@ -1,0 +1,911 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+        <link rel="stylesheet" href="./assets/css/base.css">
+        <link rel="stylesheet" href="./assets/css/main.css">
+        <link rel="stylesheet" href="./assets/fonts/fontawesome-free-6.1.0-web/css/all.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap&subset=vietnamese">
+    </head>
+    <body>
+        <div class="app">
+            <header class="header">
+                <div class="grid">
+                    <nav class="header__navbar">
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item header__navbar-item--has-qr">
+                                Chào mừng bạn đến với HLV-shop
+                                
+                                <!-- Header QR Code-->
+                                <div class="header__qr">
+                                    <img src="./assets/img/qr.code.png" alt="QR CODE" class="header__qr-img">
+                                    <div class="header__qr-apps">
+                                        <a href="" class="header__qr-link">
+                                            <img src="./assets/img/GGplay.png" alt="GOOGLE PLAY" class="header__qr-download-img">
+                                        </a>
+                                        <a href="" class="header__qr-link">
+                                            <img src="./assets/img/appstore.png" alt="APPLE STORE" class="header__qr-download-img">
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+    
+                        <ul class="header__navbar-list">
+                            <li class="header__navbar-item header__navbar-item--has-notify">
+                                <a href="" class="header__navbar-item-link">
+                                    <i class="header__navbar-icon fa-solid fa-bell"></i>
+                                    Thông báo
+                                </a>
+                                <div class="header__notify">
+                                    <header class="header__notify-head">
+                                        <h3>Thông báo mới nhận</h3>
+                                    </header>
+                                    <ul class="header__notify-list">
+                                        <li class="header__notify-item header__notify-item--view">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://file.hstatic.net/1000026716/file/banner_fanpage_cover_177c054358e44aa28ba42238fef1ac94.jpg" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">
+                                                        TỔNG HỢP KHUYẾN MÃI CHUỘT GAMING
+                                                    </span>
+                                                    <span class="header__notify-descriotion">
+                                                            MÔ TẢ TỔNG HỢP KHUYẾN MÃI CHUỘT GAMING
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item header__notify-item--view">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://file.hstatic.net/1000026716/file/file_goc_tai_nghe_fanpage_cover_2954b760a9974fbe9ad0ca18ed90fb5b.jpg" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">
+                                                        TỔNG HỢP KHUYẾN MÃI TAI NGHE
+                                                    </span>
+                                                    <span class="header__notify-descriotion">
+                                                            MÔ TẢ TỔNG HỢP KHUYẾN MÃI TAI NGHE
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item header__notify-item--view">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://file.hstatic.net/1000026716/file/banner_fanpage_cover_4089dfa982b1479aad45e84d4e3b8248.png" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">
+                                                        TỔNG HỢP KHUYẾN MÃI BÀN PHÍM
+                                                    </span>
+                                                    <span class="header__notify-descriotion">
+                                                            MÔ TẢ TỔNG HỢP KHUYẾN MÃI BÀN PHÍM
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li class="header__notify-item header__notify-item--view">
+                                            <a href="" class="header__notify-link">
+                                                <img src="https://file.hstatic.net/1000026716/file/1_fanpage_60235733de354e57967c0f78936aa0c4.png" alt="" class="header__notify-img">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">
+                                                        KHUYẾN MÃI GAMING GEAR LOGITECH
+                                                    </span>
+                                                    <span class="header__notify-descriotion">
+                                                            MÔ TẢ KHUYẾN MÃI GAMING GEAR LOGITECH
+                                                    </span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                        <footer class="header__notify-footer">
+                                            <a href="" class="header__notify-footer-btn">Xem tất cả</a>
+                                        </footer>
+                                </div>
+                                <a href="" class="header__navbar-item-link">
+                                    <i class="header__navbar-icon fa-solid fa-circle-question"></i>
+                                    Trợ giúp
+                                </a>
+                            </li>
+                            <li class="header__navbar-item">
+                                <a href="" class="header__navbar-item-link">Khuyến Mãi</a>
+                            </li>
+                            <button class="btn btn--dn header__navbar-item header__navbar-item--strong header__navbar-item--seperate js-auth-form-dn">Đăng nhập</button>
+                            <button class="btn btn--dk header__navbar-item header__navbar-item--strong js-auth-form-dk">Đăng kí</button>
+                            <!-- <li class="header__navbar-item header__navbar-user">
+                                <img src="https://cf.shopee.vn/file/3feb5e167370fcf13961ee8c00362a3c_tn" alt="" class="header__navbar-user-img">
+                                <span class="header__navbar-user-name">Huynh Hien</span>
+                                <ul class="header__navbar-user-menu">
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Tài Khoản Của Tôi</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Đơn Mua</a>
+                                    </li>
+                                    <li class="header__navbar-user-item header__navbar-user-item--separate">
+                                        <a href="">Đăng Xuất</a>
+                                    </li>
+                                </ul>
+
+                            </li> -->
+                        </ul>
+                    </nav>
+                    <!-- Header-with-search -->
+                    <div class="header-with-search">
+                        <div class="header__logo">
+                            <a href="index.html" class="header__logo-link">
+                                <p>
+                                    <img src="https://thuvienlogo.com/data/03/logo-chu-z-dep-03.jpg" alt="" class="header__logo-img">
+                                </p>  
+                            </a>                       
+                        </div>
+
+                        <div class="header__search">
+                            <div class="header__search-input-wrap">
+                                <input type="text" class="header__search-input" placeholder="Tìm Kiếm Sản Phẩm">
+                                <!-- search history -->
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Lịch Sử Tìm Kiếm</h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">Ram</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">VGA</a>
+                                        </li><li class="header__search-history-item">
+                                            <a href="">Core Intel 5</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__search-select">
+                                <span class="header__search-select-label">
+                                    Trong Shop
+                                </span>
+                                <i class="header__search-select-icon fa-solid fa-angle-down"></i>
+
+                                <ul class="header__search-option">
+                                    <li class="header__search-option-item header__search-option-item-active">
+                                        <span>Trong Shop</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                    <li class="header__search-option-item">
+                                        <span>Ngoài Shop</span>
+                                        <i class="fa-solid fa-check"></i>
+                                    </li>
+                                </ul>
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fa-solid fa-magnifying-glass"></i>
+                            </button>
+                        </div>
+                        <!-- Giỏ Hàng -->
+                        <div class="header__cart">
+                            <div class="header__cart-wrap">
+                                <i class="header__cart-icon fa-solid fa-cart-shopping"></i>
+                                <span class="header__cart-notice">0</span>
+                                <!-- co san pham trong gio hang -->
+                                <div class="header__cart-list">
+                                    <img src="./assets/img/no-cart.png" alt="" class="header__cart-nocart-img">
+                                    <span class="header__cart-list-nocart-mess">Chưa Có Sản Phẩm</span>
+                                    <!-- <h4 class="header__cart-heading">Sản Phẩm Đã Thêm</h4>
+                                    <ul class="header__cart-list-item">
+                                        <li class="header__cart-item">
+                                            <img src="https://product.hstatic.net/1000026716/product/gearvn.com-products-intel-core-i5-10400f-2_69ea122d78884db8985a0b5b2f23c206.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Intel Core i5 10400F</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">4,390,000₫</span>
+                                                        <SPAN class="header__cart-item-multiply">x</SPAN>
+                                                        <span class="header__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân Loại: CPU Intel
+                                                    </span>
+                                                    <span class="header__cart-item-delete">Xóa</span>
+        
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://product.hstatic.net/1000026716/product/01_3ed8356635034acc8ed66a54959d2dc2.png" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">MSI GeForce RTX 3060 GAMING...</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">14,490,000₫</span>
+                                                        <SPAN class="header__cart-item-multiply">x</SPAN>
+                                                        <span class="header__cart-item-qnt">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân Loại: Card Màn Hình
+                                                    </span>
+                                                    <span class="header__cart-item-delete">Xóa</span>
+        
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="header__cart-item">
+                                            <img src="https://product.hstatic.net/1000026716/product/tuf-gaming-b460m-plus-1_1306ef92b1014fe8ad5c2fc8f2f787a2.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">ASUS TUF GAMING B460M-PLUS</h5>
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">2,690,000₫</span>
+                                                        <SPAN class="header__cart-item-multiply">x</SPAN>
+                                                        <span class="header__cart-item-qnt">2</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">
+                                                        Phân Loại: Main Board
+                                                    </span>
+                                                    <span class="header__cart-item-delete">Xóa</span>
+        
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <a href="#" class="header__cart-view btn btn--primary">Xem Giỏ Hàng</a>
+                                </div> -->
+                                 <!-- No Cart : header__cart-list--no-cart (Khong co Gio Hang)-->
+                                <div class="header__cart-list header__cart-list--no-cart">
+                                    <img src="./assets/img/no-cart.png" alt="" class="header__cart-nocart-img">
+                                    <span class="header__cart-list-nocart-mess">Chưa Có Sản Phẩm</span>
+                                </div>
+                                <!-- Cart item (Gio Hàng) -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            <div class="container">
+                <img src="https://file.hstatic.net/1000026716/collection/banner_web_header_1920x450_4c6e76b09dda4241bae1dd1a0bf73423.png" width="100%" class="picture" alt="">
+                <div class="grid__colum-10">
+                    <span class="home-filter__label">Fan RGB - Tản nhiệt PC</span>
+                </div>
+                <div class="home-product">
+                    </a>
+                    <div class="grid__row">
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn-fan-xigmatek-x22f-rgb-fixed-1_61dec624d811438c95daf1eb4b99f106.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Fan XIGMATEK X22F - RGB FIXED</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">150,000₫</span>
+                                        <span class="h4 home-product-item__price-new">100,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/xigmatek-x20f-en45457-rgb-fixed-1_0207c0f95912426eb8dda94688a85477.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Fan XIGMATEK X20F - RGB FIXED</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">150,000₫</span>
+                                        <span class="h4 home-product-item__price-new">100,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/techzones-deepcool-rf120--fs_404931916225423bb85733b14e0a31f4.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Fan DeepCool RF120 RGB</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">150,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/13596_938076560aa349319a8015e8cfd3bb72.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Fan XIGMATEK X20A ARGB - PACK x3, CONTROLLER</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">390,000₫</span>
+                                        <span class="h4 home-product-item__price-new">350,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn-fan-sickleflow-120-argb-001s_f8a44f36e19c41999e112a6dd273ccef.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Fan Cooler Master SICKLEFLOW 120 ARGB - Single fan</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">380,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn-fan-xigmatek-starz-x22a-argb-pack-x3-controller-1_15aa98d5d4b7488a86943ea93a8d1f39.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Fan XIGMATEK STARZ - X22A ARGB - PACK x3, CONTROLLER</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">390,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/earvn-fan-cooler-master-sickleflow-120-argb-white-edition-single-fan-1_45c54041d1d140e6803efa8cd170e0fc.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Fan Cooler Master SICKLEFLOW 120 ARGB WHITE EDITION - Single fan</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">450,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/noctua_nt_h2_3_5_g_2_1_ff168e8863e64796a2c912426a03367c.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Keo tản nhiệt NOCTUA NT - H2 3.5gram</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">290,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/noctua_nt_h2_3_5_g_2_1_ff168e8863e64796a2c912426a03367c.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Keo tản nhiệt NOCTUA NT-H1 10gram</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">310,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn-keo-tan-nhiet-corsair-xtm50-performance-thermal-paste-20000_e4615099ed8949a995ce048db07cec48.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Keo tản nhiệt Corsair XTM50 Performance Thermal Paste</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">420,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn-tan-khi-deepcool-gammaxx-gte-v2-111_bca76a67a52940ca969c1ef3f6a98012.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nhiệt DEEPCOOL GAMMAXX GTE V2 (hỗ trợ socket 1700)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">790,000₫</span>
+                                        <span class="h4 home-product-item__price-new">690,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/hyper-212-argb-gallery-1-image_ed66c7d938d24484b5831af05bb9a20e.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nhiệt Cooler Master Hyper 212 ARGB</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">950,000₫</span>
+                                        <span class="h4 home-product-item__price-new">750,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url();">
+                                    </div>
+                                    <h4 class="home-product-item__name">GVN Ventus M</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">9,790,000₫</span>
+                                        <span class="h4 home-product-item__price-new">8,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/z3390507432065_a76a907a71ee284d21b939ae74ff3c43_700a6c2834ea4ea2a4c248bf50ce2719.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nhiệt DEEPCOOL GAMMAXX GT A-RGB (hỗ trợ socket 1700)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">990,000₫</span>
+                                        <span class="h4 home-product-item__price-new">790,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn-tan-nhiet-id-cooling-se-234-argb-1_175d0e76ee3748f18822423d6b5a176d.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nhiệt ID COOLING SE-234 ARGB (hỗ trợ socket 1700)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">850,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearnn_e524e91fb63740eba77794fc951bae02.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Fan Cooler Master MASTERFAN MF120 HALO kit 3 fan</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">1,490,000₫</span>
+                                        <span class="h4 home-product-item__price-new">990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn.com-products-bo-fan-masterfan-sf-360r-argb-fan-argb-mf120-1_c027b1eafb1948ec8227a7d88220293c.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Fan Cooler Master MASTERFAN SF360R ARGB - FAN ARGB</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">1,150,000₫/span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/1_388467c2d6af442bafdba5622a07681e.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nhiệt DEEPCOOL NEPTWIN RGB V3 (hỗ trợ socket 1700)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">1,290,000₫</span>
+                                        <span class="h4 home-product-item__price-new">1,090,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gvn_noctua_nh-l9x65_fdddad37c59d4a69839f5b080a518ba6.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nhiệt Noctua NH - L9x65</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">1,650,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gvn_noctua_nh-l9i_c775056d7e4b45228fa6984ba719714e.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nhiệt Noctua NH - L9i</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">1,290,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn-tan-nhiet-cooler-master-liquid-ml240l-v2-argb-666_e172bfdc6cc1494f8498899d94784f17.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nhiệt Cooler Master MASTERLIQUID ML240L V2 ARGB (hỗ trợ socket 1700)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">2,290,000₫</span>
+                                        <span class="h4 home-product-item__price-new">1,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/01_5cf89b9de77e4b4b83fc502afc6ac573.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nước AIO DeepCool Gammaxx L240 A-RGB</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">1,890,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gvn_aorus_atc_800_9dfcd626e8914e0fbc2cb851c0d08ed2.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nhiệt GIGABYTE AORUS ATC800 (hỗ trợ socket 1700)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">2,050,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/ml240l-v2-argb-white-gallery-0-image_e4a5f5a931624d66a610d608a7365c19.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nhiệt Cooler Master MASTERLIQUID ML240L V2 ARGB White Edition (hỗ trợ socket 1700)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">2,490,000₫</span>
+                                        <span class="h4 home-product-item__price-new">2,090,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/base-h55-h100-h150-rgb-config-gallery-h100-rgb-01_83548420da0a4967addc0a5622fc5132.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nhiệt nước Corsair H100 RGB</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">2,390,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/01_3886c73c8552480e8cc4089abd661785.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nước AIO Deepcool Castle 240EX A-RGB (hỗ trợ socket 1700)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">2,890,000₫</span>
+                                        <span class="h4 home-product-item__price-new">2,190,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/ml360-mirror-gallery-1-zoom_76fb49ef348d4dcb8bc8382d7013f2af.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nhiệt Cooler Master MASTERLIQUID ML360 MIRROR (hỗ trợ socket 1700)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">2,900,000₫</span>
+                                        <span class="h4 home-product-item__price-new">2,490,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn-castle-360ex-rgb-gamer-storm-cpu-liquid-cooler-1000_0dc8d697b1d64706ab82aa7ee47c56a7.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nước AIO Deepcool Castle 360EX ARGB (hỗ trợ socket 1700)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">3,790,000₫</span>
+                                        <span class="h4 home-product-item__price-new">3,090,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn-tan-nhiet-nuoc-corsair-h100i-elite-capellix-white-6_11043772eaef4d0cb33641fc739177c2.jpeg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nhiệt nước Corsair H100i ELITE CAPELLIX WHITE (hỗ trợ socket 1700)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">4,190,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/fghrfghfhf_78dc9e6b43434e1f812f4e6d138ed440.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nhiệt MSI MAG CORELIQUID C240</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">3,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn-tan-nuoc-aio-kraken-z63-1_b1ccf5bc3f5848a99e9ffd818451a61f.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nhiệt nước NZXT AIO Kraken Z63</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">7,590,000₫</span>
+                                        <span class="h4 home-product-item__price-new">6,650,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/01_8f818ef714ea47fb90f78f1f250d5354.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nhiệt nước GIGABYTE AORUS WATERFORCE X 240 (hỗ trợ Socket 1700)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="h4 home-product-item__price-new">5,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn.com-products-asus-rog-ryujin-ii-240-1_6aa8024f43b8404c92e5ff13f01fd7cc.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nhiệt nước ASUS ROG RYUJIN II 240 (hỗ trợ socket 1700)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">7,590,000₫</span>
+                                        <span class="h4 home-product-item__price-new">7,390,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/gearvn.com-products-asus-rog-ryujin-ii-360-1_14775d1fd967411fa72ccf6767963f0c.jpg);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nhiệt nước ASUS ROG RYUJIN II 360 (hỗ trợ socket 1700)</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">9,190,000₫</span>
+                                        <span class="h4 home-product-item__price-new">8,690,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="grid__column-2-4">
+                            <a href="" style="text-decoration: none">
+                                <div class="home-product-item">
+                                    <div class="home-product-item__img" style="background-image: url(https://product.hstatic.net/1000026716/product/ml360-sub-zero-gallery-1-image_0d10dc4f61e342cebab9bb66ef3c4f59.png);">
+                                    </div>
+                                    <h4 class="home-product-item__name">Tản nước AIO Cooler Master MASTERLIQUID ML360 SUB-ZERO</h4>
+                                    <div class="home-product-item__price">
+                                        <span class="home-product-item__price-old">11,590,000₫</span>
+                                        <span class="h4 home-product-item__price-new">10,990,000₫</span>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-basic">
+                <footer>
+                    <div class="social"><a href="#">
+                        <i class="fa-brands fa-instagram"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-snapchat"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-twitter"></i>
+                    </a>
+                    <a href="#">
+                        <i class="fa-brands fa-facebook"></i>
+                    </a></div>
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">Home</a></li>
+                        <li class="list-inline-item"><a href="#">Services</a></li>
+                        <li class="list-inline-item"><a href="#">About</a></li>
+                        <li class="list-inline-item"><a href="#">Terms</a></li>
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <p class="copyright">Company Name © 2022</p>
+                </footer>
+            </div>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+        </body>
+        
+        
+        <!-- Modal Layout-->
+        <!-- Form Login/register-->
+        <!-- Login Form -->
+        <form >
+
+            <div class="modaldn js-modaldn ">
+                <div class="auth-form ">
+                    <div class="closemodal ">
+                         <i class="closemodal__close-item fa-solid fa-xmark js-modal-close"></i>
+                        </div>
+                        <div class="auth-form__container">
+                            <div class="auth-form__header">
+                                <h3 class="auth-form__heading">Đăng Nhập</h3>
+                                <span class="auth-form__switch-btn ">Đăng Ký</span>
+                            </div>
+            
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" name="username"
+                                id="username" placeholder="Tài khoản của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" name="password" id="password" placeholder="Mật khẩu của bạn">
+                                <span toggle="#password-field" class="bx fa-fw bx-hide field-icon click-eye"></span>
+                                <span class="focus-input100"></span>
+                                <span class="symbol-input100">
+                                <i class='bx bx-key'></i>
+                            </span>
+                            </div>
+                                
+                            <div class="auth-form__aside">
+                                <div class="auth-form__help">
+                                    <a href="" class="auth-form__link auth-form__help-forgot">Quên Mật Khẩu</a>
+                                    <span class="auth-form__help-separate"></span>
+                                    <a href="" class="auth-form__link">Cần Trợ Giúp?</a>
+                                </div>
+                            </div>
+            
+                            <div class="auth-form__controls">
+                                <button class="btn btn--normal auth-form__controls-back js-modal-comeback">TRỞ LẠI</button>
+                                <button class="btn btn--primary">ĐĂNG NHẬP</button>
+                            </div>
+                        </div>
+            
+                        <div class="auth-form__socials">
+                            <a href="" class="auth-form__socials--fb btn btn--size-s btn--width-icon">
+                                <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                                <span class="auth-form__socials-tittle">
+                                    Kết Nối Với Facebook
+                                </span>
+                            </a>
+                            <a href="" class="auth-form__socials--gg btn btn--size-s btn--width-icon">
+                                <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                                <span class="auth-form__socials-tittle">
+                                    Kết Nối Với Google
+                                </span>
+                            </a>
+                        </div>
+                        </div>
+                </div>   
+            </div>
+        </form>
+        <!-- Register Form-->
+        <form onsubmit="signup()">
+            <div class="modaldk js-modaldk ">
+                <div class="auth-form">
+                    <div class="closemodal1 ">
+                        <i class="closemodal1__close-item fa-solid fa-xmark js-modal-close1"></i>
+                    </div>
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                                <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+            
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input"id="username" placeholder="Tài khoản của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input"id="password" placeholder="Mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input"id="password" placeholder="Nhập lại mật khẩu của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" id="sdt"placeholder="SĐT của bạn">
+                            </div>
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input"id="Email" placeholder="Email của bạn">
+                            </div>
+                        </div>
+                                    
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng kí, bạn đã đồng ý với HLV-shop về
+                                <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> &
+                                <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                            </p>
+                        </div>
+            
+                        <div class="auth-form__controls">
+                            <button class="btn btn--normal auth-form__controls-back js-modal-comeback1">TRỞ LẠI</button>
+                            <button class="btn btn--primary">ĐĂNG KÝ</button>
+                        </div>
+                    </div>
+        
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--fb btn btn--size-s btn--width-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-facebook-square"></i>
+                            <span class="auth-form__socials-tittle">
+                                Kết Nối Với Facebook
+                            </span>
+                        </a>
+                        <a href="" class="auth-form__socials--gg btn btn--size-s btn--width-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials-tittle">
+                                Kết Nối Với Google
+                            </span>
+                        </a>
+                    </div>
+                </div> 
+            </div>
+        </form>
+        <script>
+            const DNbtns = document.querySelectorAll('.js-auth-form-dn')
+            const modaldn = document.querySelector('.js-modaldn')
+            const modalclose= document.querySelector('.js-modal-close')
+            const modalcomeback= document.querySelector('.js-modal-comeback')
+            function showDNbtn(){
+                modaldn.classList.add('open')
+            }
+
+            function hideDNbtn(){
+                modaldn.classList.remove('open')
+            }
+
+            for(const DNbtn of DNbtns){
+                DNbtn.addEventListener('click',showDNbtn)
+            }
+            modalclose.addEventListener('click',hideDNbtn)
+            modalcomeback.addEventListener('click',hideDNbtn)
+        </script>
+        <script>
+            const Dkbtns = document.querySelectorAll('.js-auth-form-dk')
+            const modaldk = document.querySelector('.js-modaldk')
+            const modalclose1= document.querySelector('.js-modal-close1')
+            const modalcomeback1= document.querySelector('.js-modal-comeback1')
+            const modaldn1 = document.querySelector('.js-modaldn')
+            function showDKbtn(){
+                modaldk.classList.add('open')
+            }
+
+            function hideDKbtn(){
+                modaldk.classList.remove('open')
+            }
+
+            for(const DKbtn of Dkbtns){
+                DKbtn.addEventListener('click',showDKbtn)
+            }   
+            modalclose1.addEventListener('click',hideDKbtn)
+            modalcomeback1.addEventListener('click',hideDKbtn)
+            
+        </script>
+    </body>
+</html>
